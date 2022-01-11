@@ -1,5 +1,5 @@
 Tue Jan 11 - 
-
+Set up GroupMinutes.txt + personal Minutes.txt file after joining the github.
 
 Thur Jan 13 - 
 
