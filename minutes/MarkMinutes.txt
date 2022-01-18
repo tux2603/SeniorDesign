@@ -5,7 +5,7 @@ Thur Jan 13 -
 
 
 Tue Jan 18 - 
-
+Looked into documentation for existing line following alorithms in Python
 
 Thur Jan 20 - 
 
