@@ -6,7 +6,7 @@
 
 ## Actions
 
-1) [x] All members: Install software on personal machines
+1. [x] All members: Install software on personal machines
 
 # Thursday, 1/13/2022
 
@@ -16,6 +16,18 @@
 
 ## Actions
 
-2) [x] Nawras: Find alternative vendor for RPi
-3) [x] Owen: Find alternative for battery
-4) [ ] Adam: Design robot chassis
+2. [x] Nawras: Find alternative vendor for RPi
+3. [x] Owen: Find alternative for battery
+4. [ ] Adam: Design robot chassis
+
+# Tuesday, 1/18/2022
+
+- Ahmed was the only other group member present
+- Converted parts list to the required format
+  - Parts list had already been submitted, so this wasn't necessary
+- Checked in on part status, no news yet
+
+## Actions
+
+5. [ ] Ahmed: design mixing chamber
+6. [ ] OwenL design valves
