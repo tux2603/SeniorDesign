@@ -5,7 +5,10 @@ Thur Jan 13 -
 
 
 Tue Jan 18 - 
-
+Looked into documentation for existing line following alorithms in Python
+https://pybricks.com/ev3-micropython/examples/robot_educator_line.html
+http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising
+http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
 
 Thur Jan 20 - 
 
