@@ -10,83 +10,83 @@
   - http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising <br>
   - http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
 
-## Thur Jan 20 - 
+## Thur Jan 20
 - Started development on the admin page
 
 
-## Tue Jan 25 - 
+## Tue Jan 25  
 - Continued Development on the admin page
 
-## Thur Jan 27 - 
+## Thur Jan 27 
 - Finished admin page; need flask server to complete 
 
-## Tue Feb 1 - 
+## Tue Feb 1  
 
 
-## Thur Feb 3 - 
+## Thur Feb 3 
 
 
-## Tue Feb 8 - 
+## Tue Feb 8  
 
 
-## Thur Feb 10 - 
+## Thur Feb 10 
 
 
-## Tue Feb 15 - 
+## Tue Feb 15  
 
 
-## Thur Feb 17 - 
+## Thur Feb 17 
 
 
-## Tue Feb 22 - 
+## Tue Feb 22  
 
 
-## Thur Feb 24 - 
+## Thur Feb 24 
 
 
-## Tue Mar 1 - 
+## Tue Mar 1  
 
 
-## Thur Mar 3 - 
+## Thur Mar 3 
 
 
-## Tue Mar 8 - 
+## Tue Mar 8  
 
 
-## Thur Mar 10 - 
+## Thur Mar 10 
 
 
-## Tue Mar 15 - 
+## Tue Mar 15  
 
 
-## Thur Mar 17 - 
+## Thur Mar 17 
 
 
-## Tue Mar 22 - 
+## Tue Mar 22 
 
 
-## Thur Mar 24 - 
+## Thur Mar 24 
 
 
-## Tue Mar 29 - 
+## Tue Mar 29  
 
 
-## Thur Mar 31 - 
+## Thur Mar 31 
 
 
-## Tue Apr 5 - 
+## Tue Apr 5 
 
 
-## Thur Apr 7 - 
+## Thur Apr 7  
 
 
-## Tue Apr 12 - 
+## Tue Apr 12 
 
 
-## Thur Apr 14 - 
+## Thur Apr 14  
 
 
-## Tue Apr 19 - 
+## Tue Apr 19  
 
 
-## Thur Apr 21 - 
+## Thur Apr 21 
