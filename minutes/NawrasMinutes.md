@@ -43,3 +43,13 @@
 8.  [x] Mark: find API documentation
 9.  [ ] Mark: set up admin page
 10. [x] Owen: find out how to set up a RPi as a hotspot
+
+# Thursday, 1/27/2022
+
+- four members were present today Mark, Owen, Ahmed, and myself
+- Owen showed the group the designed valve
+- Went over work done on actions this week 
+- 
+
+## Actions
+11. [ ] Owen: check part order status
