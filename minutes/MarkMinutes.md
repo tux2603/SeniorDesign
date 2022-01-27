@@ -11,7 +11,7 @@
   - http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
 
 ## Thur Jan 20 - 
-- Started devlopment on the admin page
+- Started development on the admin page
 
 
 ## Tue Jan 25 - 
