@@ -2,12 +2,12 @@
 -Set up GroupMinutes.txt + personal Minutes.txt file after joining the github.
 
 ## Thur Jan 13
-
+-Stuff
 
 ## Tue Jan 18
--Found documentation for existing line following alorithms in Python
-  -https://pybricks.com/ev3-micropython/examples/robot_educator_line.html
-  -http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising
+-Found documentation for existing line following alorithms in Python /n
+  -https://pybricks.com/ev3-micropython/examples/robot_educator_line.html /n
+  -http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising /n
   -http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
 
 ## Thur Jan 20 - 
