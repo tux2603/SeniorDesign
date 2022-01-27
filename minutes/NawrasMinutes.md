@@ -28,7 +28,6 @@
 
 5. [ ] Ahmed: design mixing chamber
 6. [x] Owen design valves
-adasdasdsadasdadsad
 
 # Thursday, 1/20/2022
 
@@ -50,7 +49,7 @@ adasdasdsadasdadsad
 - four members were present today Mark, Owen, Ahmed, and myself
 - Owen showed the group the designed valve
 - Went over work done on actions this week 
-- 
+
 
 ## Actions
 11. [ ] Owen: check part order status
