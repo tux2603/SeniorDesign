@@ -1,24 +1,24 @@
 ## Tue Jan 11
--Set up GroupMinutes.txt + personal Minutes.txt file after joining the github.
+- Set up GroupMinutes.txt + personal Minutes.txt file after joining the github
 
 ## Thur Jan 13
--Stuff
+- Stuff
 
 ## Tue Jan 18
--Found documentation for existing line following alorithms in Python <br>
-  -https://pybricks.com/ev3-micropython/examples/robot_educator_line.html <br>
-  -http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising <br>
-  -http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
+- Found documentation for existing line following alorithms in Python <br>
+  - https://pybricks.com/ev3-micropython/examples/robot_educator_line.html <br>
+  - http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising <br>
+  - http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
 
 ## Thur Jan 20 - 
--Started devlopment on the admin page.
+- Started devlopment on the admin page
 
 
 ## Tue Jan 25 - 
--Continued Development on the admin page
+- Continued Development on the admin page
 
 ## Thur Jan 27 - 
--Finished admin page; need flask server to complete 
+- Finished admin page; need flask server to complete 
 
 ## Tue Feb 1 - 
 
