@@ -5,9 +5,9 @@
 -Stuff
 
 ## Tue Jan 18
--Found documentation for existing line following alorithms in Python /n
-  -https://pybricks.com/ev3-micropython/examples/robot_educator_line.html /n
-  -http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising /n
+-Found documentation for existing line following alorithms in Python <br>
+  -https://pybricks.com/ev3-micropython/examples/robot_educator_line.html <br>
+  -http://einsteiniumstudios.com/beaglebone-opencv-line-following-robot.html - Promising <br>
   -http://rsewiki.elektro.dtu.dk/index.php/Vision_based_Line_Follower
 
 ## Thur Jan 20 - 
