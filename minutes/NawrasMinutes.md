@@ -27,5 +27,19 @@
 ## Actions
 
 5. [ ] Ahmed: design mixing chamber
-6. [ ] OwenL design valves
-7. 
+6. [x] Owen design valves
+
+# Thursday, 1/20/2022
+
+- All members present
+- Went over work done on actions this week
+- Planned out some basic website structure
+- Decided to meet once a week on Thursday, got Dr. Palmer's approval
+- Decided to annex table 28, since it has a power outlet
+
+## Actions
+
+7.  [x] Nawras: set up flask web server
+8.  [x] Mark: find API documentation
+9.  [ ] Mark: set up admin page
+10. [x] Owen: find out how to set up a RPi as a hotspot
