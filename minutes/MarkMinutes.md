@@ -24,8 +24,8 @@
 
 
 ## Thur Feb 3 
--Discussed chassis design plan
--Updated existing documents to fit necessary changes
+- Discussed chassis design plan <br>
+- Updated existing documents to fit necessary changes <br>
 
 ## Tue Feb 8  
 
