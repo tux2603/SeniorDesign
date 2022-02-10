@@ -63,3 +63,16 @@
 ## Actions
 
 11. [ ] Owen: Check on status of part orders
+
+
+# Thursday, 2/3/2022
+
+- Meeting held online
+- Adam had made no actual progress on chassis design
+- Most of meeting was just going over how the chassis will lay out and how it will work
+
+## Actions
+
+12. [ ] Owen: 3D print parts
+13. [ ] Adam: Program line following algorithm 
+
