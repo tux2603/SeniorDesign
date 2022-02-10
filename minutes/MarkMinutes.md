@@ -20,73 +20,38 @@
 ## Thur Jan 27 
 - Finished admin page; need flask server to complete 
 
-## Tue Feb 1  
-
-
 ## Thur Feb 3 
-
-
-## Tue Feb 8  
-
+- Discussed chassis design plan <br>
+- Updated existing documents to fit necessary changes <br>
 
 ## Thur Feb 10 
-
-
-## Tue Feb 15  
 
 
 ## Thur Feb 17 
 
 
-## Tue Feb 22  
-
-
 ## Thur Feb 24 
-
-
-## Tue Mar 1  
 
 
 ## Thur Mar 3 
 
 
-## Tue Mar 8  
-
-
 ## Thur Mar 10 
-
-
-## Tue Mar 15  
 
 
 ## Thur Mar 17 
 
 
-## Tue Mar 22 
-
-
 ## Thur Mar 24 
-
-
-## Tue Mar 29  
 
 
 ## Thur Mar 31 
 
 
-## Tue Apr 5 
-
-
 ## Thur Apr 7  
 
 
-## Tue Apr 12 
-
-
 ## Thur Apr 14  
-
-
-## Tue Apr 19  
 
 
 ## Thur Apr 21 
