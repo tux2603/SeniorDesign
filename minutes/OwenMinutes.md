@@ -30,7 +30,7 @@
 ## Actions
 
 5. [ ] Ahmed: design mixing chamber
-6. [ ] Owen: design valves
+6. [x] Owen: design valves
 
 # Thursday, 1/20/2022
 
@@ -47,7 +47,7 @@
 
 7. [x] Nawras: set up flask web server
 8. [x] Mark: find API documentation
-9. [ ] Mark: set up admin page
+9. [x] Mark: set up admin page
 10. [x] Owen: find out how to set up a RPi as a hotspot
 
 # Thursday, 1/27/2022
@@ -74,5 +74,18 @@
 ## Actions
 
 12. [ ] Owen: 3D print parts
-13. [ ] Adam: Program line following algorithm 
+13. [ ] ~~Adam~~ Mark: Program line following algorithm 
+
+
+# Thursday, 2/10/2022
+
+- Adam presented draft of chassis design, design did not meet the specifications given and will need to be modified
+- Reassigned line following algorithm to Mark
+- Planned thread structure for the programs
+- Adam had to leave early
+
+## Actions
+
+14. [ ] Nawras: Make front end
+15. [ ] Owen: Main program/glue thread
 
