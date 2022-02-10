@@ -25,7 +25,10 @@
 - Updated existing documents to fit necessary changes <br>
 
 ## Thur Feb 10 
-
+- Added descriptive readme files to Github <br>
+- Added useful links/documentations for future tasks <br>
+- Organized Github files <br>
+- Began work on line following
 
 ## Thur Feb 17 
 
