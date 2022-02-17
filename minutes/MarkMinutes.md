@@ -31,7 +31,7 @@
 - Began work on line following
 
 ## Thur Feb 17 
-
+- Finished line following
 
 ## Thur Feb 24 
 
