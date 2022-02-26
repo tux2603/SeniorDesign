@@ -20,4 +20,15 @@ Bartender Bot - Admin Page
   <option value="remove">remove</option>
 </select>
 <button type="button">Done</button>
+
+<hr>
+
+<h2 style="text-align:center;">Order Queue</h2>
+<ol>
+{% for order in order_queue %}
+  <li>{{ order[0] }} ordered by station {{ order[1] }}</li>
+{% endfor %}
+</ol>
+<a href="{{ url_for('admin') }}?clear_queue=1">Clear Queue</a>
+
 {% endblock %}

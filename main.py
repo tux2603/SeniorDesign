@@ -1,10 +1,10 @@
 import cv2
-from flask import Flask, make_response, render_template
+from flask import Flask, make_response, render_template, request, redirect, url_for
 from LineFollowing.LineFollowing import LineFollower
 
 app = Flask(__name__)
 
-    
+order_queue = []    
 
 @app.route('/')
 def index():
@@ -13,7 +13,10 @@ def index():
 
 @app.route('/admin')
 def admin():
-    return render_template('admin/adminPage.html')
+    if request.args.get('clear_queue') == '1':
+        order_queue.clear()
+        return redirect(url_for('admin'))
+    return render_template('admin/adminPage.html', order_queue=order_queue)
 
 
 @app.route('/admin/line_follower')
@@ -44,14 +47,22 @@ def line_follower_image():
     return response
 
 
-@app.route('/customer/order')
+@app.route('/customer/order', methods=['GET', 'POST'])
 def customer_order():
-    return render_template('Customer/customerPage.html')
+    if request.method == 'POST':
+        drink = request.form.get('drink')
+        station = request.form.get('station')
+        order_queue.append((drink, station))
+        return render_template('customer/order_placed.html', drink=drink, station=station, queue_position=len(order_queue))
+    else:
+        # get the station from the URL
+        station = request.args.get('station')
+        return render_template('customer/customerPage.html', station=station)
 
 
 if __name__ == '__main__':
     line_follower = LineFollower(show_debug_window=True)
-    app.run(host='localhost', port=8080, debug=False)
+    app.run(host='localhost', port=8080, debug=True)
 
     line_follower.stop()
     
