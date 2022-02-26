@@ -89,3 +89,22 @@
 14. [ ] Nawras: Make front end
 15. [ ] Owen: Main program/glue thread
 
+# Thursday, 2/17/2022
+
+- Late start due to weather and Dr. Buck's mini lecture
+- Part orders were never placed on the backend. Lisa Morris has the ordered in and they have started arriving
+- Chassis approaching final printable state
+- Not much work to do, mostly we're just waiting on parts and printing
+
+
+## Actions
+
+No new actions assigned
+
+# Thursday, 2/24/2022
+
+- Waiting for parts to come in still, no new tasks being assigned for spring break
+
+## Actions
+
+No new actions assigned
