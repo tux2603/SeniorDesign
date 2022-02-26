@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block pagetitle %}
+Line Follower Status
+{% endblock %}
+
+{% block title %}
+Bartender Bot - Line Follower Status
+{% endblock %}
+
+{% block content %}
+<p>The line following unit {{ status }}</p>
+<img src="/admin/line_follower/image" alt="line_follower status image" />
+{% endblock %}

@@ -3,6 +3,7 @@
 # Working draft
 import numpy as np
 import cv2
+from time import time
 from threading import Thread
 
 class LineFollower:
@@ -24,9 +25,19 @@ class LineFollower:
 
         self._show_debug_window = show_debug_window
 
+        self._crop_img = None
+
+
+        # Get the time in milliseconds that the last frame was captured
+        self._last_update = int(round(time() * 1000))
+
         # Start the thread
         self._thread = Thread(target=self._processing_thread)
         self._thread.start()
+
+    @property
+    def latency(self):
+        return int(round(time() * 1000)) - self._last_update
 
     @property
     def steering(self):
@@ -37,6 +48,11 @@ class LineFollower:
     def is_line_acquired(self):
         # TODO: Check to see if there's a lock needed here
         return self._is_line_acquired
+
+    @property
+    def frame(self):
+        # TODO: Check to see if there's a lock needed here
+        return cv2.imencode('.jpg', self._crop_img)[1]
 
     def stop(self):
         self._terminate = True
@@ -67,29 +83,40 @@ class LineFollower:
             if len(contours) > 0:
                 c = max(contours, key=cv2.contourArea)
                 M = cv2.moments(c)
-                cx = int(M['m10']/M['m00'])
-                cy = int(M['m01']/M['m00'])
-                cv2.line(crop_img,(cx,0),(cx,720),(255,0,0),1)
-                cv2.line(crop_img,(0,cy),(1280,cy),(255,0,0),1)
-                cv2.drawContours(crop_img, contours, -1, (0,255,0), 1)
 
-            # Values below will also need to be edited
-                if cx >= self._left_margin:
-                    self._steering = -1
-                if cx < self._left_margin and cx > self._right_margin:
+                if M['m00'] != 0 and M['m01'] != 0:
+                    cx = int(M['m10']/M['m00'])
+                    cy = int(M['m01']/M['m00'])
+                    cv2.line(crop_img,(cx,0),(cx,720),(255,0,0),1)
+                    cv2.line(crop_img,(0,cy),(1280,cy),(255,0,0),1)
+                    cv2.drawContours(crop_img, contours, -1, (0,255,0), 1)
+
+                    # Values below will also need to be edited
+                    if cx >= self._left_margin:
+                        self._steering = -1
+                    if cx < self._left_margin and cx > self._right_margin:
+                        self._steering = 0
+                    if cx <= self._right_margin:
+                        self._steering = 1
+
+                    self._is_line_acquired = True
+
+                else:
                     self._steering = 0
-                if cx <= self._right_margin:
-                    self._steering = 1
-
-                self._is_line_acquired = True
+                    self._is_line_acquired = False
 
             else:
                 self._is_line_acquired = False
                 self._steering = 0
 
+            self._last_update = int(round(time() * 1000))
+
             if self._show_debug_window:
                 # Display the resulting frame
                 cv2.imshow('frame',crop_img)
+
+            self._crop_img = frame
+
 
             # press 'q' to quit
             if cv2.waitKey(1) & 0xFF == ord('q'):

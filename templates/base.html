@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>{% block pagetitle %} {% endblock %} - Bartender Bot</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+    <h1>{% block title %} {% endblock %}</h1>
+
+    <hr>
+
+    <div id='content'>
+        {% block content %} {% endblock %}
+    </div>
+
+    <hr>
+
+    <div id='footer'>
+        <p>Group 19 Senior Design Fall 2021 - Spring 2022</p>
+        <p>View project on <a href="https://github.com/tux2603/SeniorDesign">GitHub</a></p>
+    </div> 
+</body>
+
+</html>

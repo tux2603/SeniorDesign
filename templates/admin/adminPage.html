@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-<title>Bartender Bot - Admin Page</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-<h1 style="text-align:center; color:MediumBlue;">Bartender Bot - Admin Page</h1>
-<hr>
+{% block pagetitle %}
+Admin Page
+{% endblock %}
 
+{% block title %}
+Bartender Bot - Admin Page
+{% endblock %}
+
+{% block content %}
 <h2 style="text-align:center;">Add/Remove Drinks</h2>
 <form>Name of Drink: <input type="text"></form>
 <form>Amount from Container 1: <input type="text"></form>
@@ -19,7 +20,4 @@
   <option value="remove">remove</option>
 </select>
 <button type="button">Done</button>
-<hr>
-
-</body>
-</html>
+{% endblock %}
