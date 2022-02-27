@@ -3,6 +3,7 @@ from flask import Flask, make_response, render_template, request, redirect, url_
 from LineFollowing.LineFollowing import LineFollower
 
 app = Flask(__name__)
+print(app.static_folder)
 
 order_queue = []    
 
