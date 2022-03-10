@@ -34,13 +34,13 @@
 - Finished line following
 
 ## Thur Feb 24 
-
+- nada
 
 ## Thur Mar 3 
-
+- Elden Ring
 
 ## Thur Mar 10 
-
+- Started programming status LEDs function
 
 ## Thur Mar 17 
 
