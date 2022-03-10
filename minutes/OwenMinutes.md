@@ -18,7 +18,7 @@
 
 2. [x] Nawras: Find alternative vendor for RPi
 3. [x] Owen: Find alternative for battery
-4. [ ] Adam: Design robot chassis
+4. [x] Adam: Design robot chassis
 
 # Tuesday, 1/18/2022
 
@@ -29,7 +29,7 @@
 
 ## Actions
 
-5. [ ] Ahmed: design mixing chamber
+5. [x] Ahmed: design mixing chamber
 6. [x] Owen: design valves
 
 # Thursday, 1/20/2022
@@ -62,7 +62,7 @@
 
 ## Actions
 
-11. [ ] Owen: Check on status of part orders
+11. [x] Owen: Check on status of part orders
 
 
 # Thursday, 2/3/2022
@@ -74,7 +74,7 @@
 ## Actions
 
 12. [ ] Owen: 3D print parts
-13. [ ] ~~Adam~~ Mark: Program line following algorithm 
+13. [x] ~~Adam~~ Mark: Program line following algorithm 
 
 
 # Thursday, 2/10/2022
@@ -86,8 +86,8 @@
 
 ## Actions
 
-14. [ ] Nawras: Make front end
-15. [ ] Owen: Main program/glue thread
+14. [x] Nawras: Make front end
+15. [x] Owen: Main program/glue thread
 
 # Thursday, 2/17/2022
 
@@ -108,3 +108,18 @@ No new actions assigned
 ## Actions
 
 No new actions assigned
+
+
+# Thursday, 3/10/2022
+
+- All parts are in
+- Adam finalized the chassis design
+- All parts and designs in, tasks assigned to start assembly
+
+## Actions
+
+16. [ ] Adam: Assemble chassis
+17. [ ] Owen: Assemble valves
+18. [ ] Ahmed: Assemble mixing chamber
+19. [ ] Nawras: Install software on pi
+20. [ ] Mark: Program status LEDs
