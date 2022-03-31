@@ -62,8 +62,8 @@ def customer_order():
 
 
 if __name__ == '__main__':
-    line_follower = LineFollower(show_debug_window=True)
-    app.run(host='localhost', port=8080, debug=True)
+    line_follower = LineFollower(show_debug_window=False)
+    app.run(host='localhost', port=8080, debug=False)
 
     line_follower.stop()
     
