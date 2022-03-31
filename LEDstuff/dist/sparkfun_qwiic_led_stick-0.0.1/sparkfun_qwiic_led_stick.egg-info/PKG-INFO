@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: sparkfun-qwiic-led-stick
+Version: 0.0.1
+Summary: SparkFun Electronics Qwiic LED Stick Python package
+Home-page: https://www.sparkfun.com/products/18354
+Author: SparkFun Electronics
+Author-email: info@sparkfun.com
+License: MIT
+Description: Qwiic LED Stick Py
+        =============================================
+        
+        
+        The Qwiic LED Stick features ten addressable APA102 LEDs, 
+        making it easy to add full color LED control using I2C.
+Keywords: electronics,maker
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
