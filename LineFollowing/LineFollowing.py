@@ -6,6 +6,9 @@ import cv2
 from time import time
 from threading import Thread
 
+from pca9685 import PCA9685
+from time import sleep
+
 class LineFollower:
     def __init__(self, left_margin=180, right_margin=140, show_debug_window=False):
         self.video_capture = cv2.VideoCapture(0)
@@ -30,6 +33,10 @@ class LineFollower:
 
         # Get the time in milliseconds that the last frame was captured
         self._last_update = int(round(time() * 1000))
+
+        # Stuff to take care of controlling the motors
+        self._motor_control = PCA9685(0x40, debug=False)
+        self._motor_control.setPWMFreq(50)
 
         # Start the thread
         self._thread = Thread(target=self._processing_thread)
@@ -105,11 +112,28 @@ class LineFollower:
                     self._steering = 0
                     self._is_line_acquired = False
 
+                
+
             else:
                 self._is_line_acquired = False
                 self._steering = 0
 
             self._last_update = int(round(time() * 1000))
+
+            # Handle the steering stuff
+            if self._is_line_acquired:
+                if self.steering == 0:
+                    self._motor_control.setServoPulse(0, 500)
+                    self._motor_control.setServoPulse(1, 2500)
+                elif self.steering == 1:
+                    self._motor_control.setServoPulse(0, 2500)
+                    self._motor_control.setServoPulse(1, 2500)
+                elif self.steering == -1:
+                    self._motor_control.setServoPulse(0, 500)
+                    self._motor_control.setServoPulse(1, 500)
+            else:
+                self._motor_control.setServoPulse(0, 1500)
+                self._motor_control.setServoPulse(1, 1500)
 
             if self._show_debug_window:
                 # Display the resulting frame
