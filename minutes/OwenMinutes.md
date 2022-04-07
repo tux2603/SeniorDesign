@@ -118,8 +118,19 @@ No new actions assigned
 
 ## Actions
 
-16. [ ] Adam: Assemble chassis
-17. [ ] Owen: Assemble valves
+16. [x] Adam: Assemble chassis
+17. [x] Owen: Assemble valves
 18. [ ] Ahmed: Assemble mixing chamber
-19. [ ] Nawras: Install software on pi
-20. [ ] Mark: Program status LEDs
+19. [x] Nawras: Install software on pi
+20. [x] Mark: Program status LEDs
+
+# Thursday, 4/7/2022
+
+- Owen and Ahmed were present
+- Owen tested valves, will need adjusted to get a good seal when closed
+- Owen added motor control to the line following script
+
+## Actions
+
+21. [ ] Owen: Calibrate valves
+22. [ ] Owen: Make camera standoff
