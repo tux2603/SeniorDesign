@@ -10,7 +10,7 @@ from pca9685 import PCA9685
 from time import sleep
 
 class LineFollower:
-    def __init__(self, left_margin=180, right_margin=140, show_debug_window=False):
+    def __init__(self, left_margin=40, right_margin=120, show_debug_window=False):
         self.video_capture = cv2.VideoCapture(0)
         self.video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 160)
         self.video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 120)
@@ -99,11 +99,11 @@ class LineFollower:
                     cv2.drawContours(crop_img, contours, -1, (0,255,0), 1)
 
                     # Values below will also need to be edited
-                    if cx >= self._left_margin:
+                    if cx <= self._left_margin:
                         self._steering = -1
-                    if cx < self._left_margin and cx > self._right_margin:
+                    if cx > self._left_margin and cx < self._right_margin:
                         self._steering = 0
-                    if cx <= self._right_margin:
+                    if cx >= self._right_margin:
                         self._steering = 1
 
                     self._is_line_acquired = True
