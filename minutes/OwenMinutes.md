@@ -133,4 +133,27 @@ No new actions assigned
 ## Actions
 
 21. [ ] Owen: Calibrate valves
-22. [ ] Owen: Make camera standoff
+22. [x] Owen: Make camera standoff (completed 4/14)
+23. [ ] Nawras: Improve webpage CSS
+
+
+# Tuesday, 4/12/2022
+
+- Brief meeting online via text messaging to assign tasks
+
+
+## Actions
+
+24. [ ] Owen: design and fabricate pump motor driver board
+25. [ ] Mark: write code for weight sensor
+
+# Thursday, 4/14/2022
+
+- Owen present at 8:10 am, all other group members >30min late or absent
+- Mixing chamber design finalized, in print queue
+- Owen performed some of the tests
+
+## Actions
+
+26. [x] Owen: perform 0.0-0.2, 3.1-3.2, 4.0-4.1 (completed 4/14)
+27. [ ] Adam: Drill new mounting holes for weight sensor
