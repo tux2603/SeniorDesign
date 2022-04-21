@@ -13,7 +13,7 @@ RPI = True
 
 class LineFollower:
     def __init__(self, left_margin=60, right_margin=100, show_debug_window=False):
-        camera_num = 3
+        camera_num = 0
         self.video_capture = cv2.VideoCapture(camera_num)
 
         while (self.video_capture is None or not self.video_capture.isOpened()) and camera_num < 50:
