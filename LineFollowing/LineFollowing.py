@@ -168,6 +168,7 @@ if __name__ == '__main__':
                 print('Go straight')
             elif line_follower.steering == 1:
                 print('Turn right')
+                sleep(200)
         except KeyboardInterrupt:
             print('\nExiting...')
             line_follower.stop()
