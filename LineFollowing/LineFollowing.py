@@ -12,16 +12,11 @@ from time import sleep
 class LineFollower:
     def __init__(self, left_margin=40, right_margin=120, show_debug_window=False):
         camera_num = 0
+        self.video_capture = cv2.VideoCapture(camera_num)
 
-        while True:
-            try:
-                self.video_capture = cv2.VideoCapture(camera_num)
-                break
-            except:
-                camera_num += 1
-            if camera_num > 50:
-                print('No camera found')
-                raise Exception('No camera found')
+        while (self.video_capture is None or not self.video_capture.isOpened()) and camera_num < 50:
+            camera_num += 1
+            self.video_capture = cv2.VideoCapture(camera_num)
         
         self.video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 160)
         self.video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 120)
