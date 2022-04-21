@@ -140,11 +140,11 @@ class LineFollower:
                         self._motor_control.setServoPulse(0, 2500)
                         self._motor_control.setServoPulse(1, 500)
                     elif self.steering == 1:
-                        self._motor_control.setServoPulse(0, 500)
-                        self._motor_control.setServoPulse(1, 500)
-                    elif self.steering == -1:
                         self._motor_control.setServoPulse(0, 2500)
                         self._motor_control.setServoPulse(1, 2500)
+                    elif self.steering == -1:
+                        self._motor_control.setServoPulse(0, 500)
+                        self._motor_control.setServoPulse(1, 500)
                 else:
                     self._motor_control.setServoPulse(0, 1500)
                     self._motor_control.setServoPulse(1, 1500)
