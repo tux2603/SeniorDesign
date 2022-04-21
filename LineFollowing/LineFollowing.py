@@ -74,6 +74,10 @@ class LineFollower:
         self._terminate = True
         self._thread.join()
 
+        if RPI:
+            self._motor_control.setServoPulse(0, 1500)
+            self._motor_control.setServoPulse(1, 1500)
+
     def _processing_thread(self):
         while not self._terminate:
             # print('LineFollower: Processing thread running')
@@ -91,7 +95,7 @@ class LineFollower:
             # blur = cv2.GaussianBlur(gray,(5,5),0)
 
             # Color thresholding
-            ret,thresh = cv2.threshold(gray,60,255,cv2.THRESH_BINARY_INV)
+            ret,thresh = cv2.threshold(gray,70,255,cv2.THRESH_BINARY_INV)
 
             # Find the contours of the frame
             contours,hierarchy = cv2.findContours(thresh.copy(), 1, cv2.CHAIN_APPROX_NONE)
