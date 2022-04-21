@@ -9,9 +9,11 @@ from threading import Thread
 from pca9685 import PCA9685
 from time import sleep
 
+RPI = True
+
 class LineFollower:
-    def __init__(self, left_margin=40, right_margin=120, show_debug_window=False):
-        camera_num = 0
+    def __init__(self, left_margin=60, right_margin=100, show_debug_window=False):
+        camera_num = 3
         self.video_capture = cv2.VideoCapture(camera_num)
 
         while (self.video_capture is None or not self.video_capture.isOpened()) and camera_num < 50:
@@ -41,8 +43,9 @@ class LineFollower:
         self._last_update = int(round(time() * 1000))
 
         # Stuff to take care of controlling the motors
-        self._motor_control = PCA9685(0x40, debug=False)
-        self._motor_control.setPWMFreq(50)
+        if RPI:
+            self._motor_control = PCA9685(0x40, debug=False)
+            self._motor_control.setPWMFreq(50)
 
         # Start the thread
         self._thread = Thread(target=self._processing_thread)
@@ -84,10 +87,11 @@ class LineFollower:
             gray = cv2.cvtColor(crop_img, cv2.COLOR_BGR2GRAY)
 
             # Gaussian blur
-            blur = cv2.GaussianBlur(gray,(5,5),0)
+            # We don't need this anymore, since it's being applied in hardware
+            # blur = cv2.GaussianBlur(gray,(5,5),0)
 
             # Color thresholding
-            ret,thresh = cv2.threshold(blur,80,255,cv2.THRESH_BINARY_INV)
+            ret,thresh = cv2.threshold(gray,60,255,cv2.THRESH_BINARY_INV)
 
             # Find the contours of the frame
             contours,hierarchy = cv2.findContours(thresh.copy(), 1, cv2.CHAIN_APPROX_NONE)
@@ -103,6 +107,9 @@ class LineFollower:
                     cv2.line(crop_img,(cx,0),(cx,720),(255,0,0),1)
                     cv2.line(crop_img,(0,cy),(1280,cy),(255,0,0),1)
                     cv2.drawContours(crop_img, contours, -1, (0,255,0), 1)
+
+                    # if RPI:
+                    print(f'CENTER AT: {cx}, {cy}')
 
                     # Values below will also need to be edited
                     if cx <= self._left_margin:
@@ -126,20 +133,21 @@ class LineFollower:
 
             self._last_update = int(round(time() * 1000))
 
-            # Handle the steering stuff
-            if self._is_line_acquired:
-                if self.steering == 0:
-                    self._motor_control.setServoPulse(0, 2500)
-                    self._motor_control.setServoPulse(1, 500)
-                elif self.steering == 1:
-                    self._motor_control.setServoPulse(0, 500)
-                    self._motor_control.setServoPulse(1, 500)
-                elif self.steering == -1:
-                    self._motor_control.setServoPulse(0, 2500)
-                    self._motor_control.setServoPulse(1, 2500)
-            else:
-                self._motor_control.setServoPulse(0, 1500)
-                self._motor_control.setServoPulse(1, 1500)
+            if RPI:
+                # Handle the steering stuff
+                if self._is_line_acquired:
+                    if self.steering == 0:
+                        self._motor_control.setServoPulse(0, 2500)
+                        self._motor_control.setServoPulse(1, 500)
+                    elif self.steering == 1:
+                        self._motor_control.setServoPulse(0, 500)
+                        self._motor_control.setServoPulse(1, 500)
+                    elif self.steering == -1:
+                        self._motor_control.setServoPulse(0, 2500)
+                        self._motor_control.setServoPulse(1, 2500)
+                else:
+                    self._motor_control.setServoPulse(0, 1500)
+                    self._motor_control.setServoPulse(1, 1500)
 
             if self._show_debug_window:
                 # Display the resulting frame
@@ -168,7 +176,7 @@ if __name__ == '__main__':
                 print('Go straight')
             elif line_follower.steering == 1:
                 print('Turn right')
-                sleep(200)
+            sleep(0.2)
         except KeyboardInterrupt:
             print('\nExiting...')
             line_follower.stop()
