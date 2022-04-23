@@ -118,11 +118,41 @@ No new actions assigned
 
 ## Actions
 
-16. [x] Adam: Assemble chassis
-17. [x] Owen: Assemble valves
+16. [x] Adam: Assemble chassis (completed 3/31)
+17. [x] Owen: Assemble valves (completed 3/29)
 18. [ ] Ahmed: Assemble mixing chamber
-19. [x] Nawras: Install software on pi
-20. [x] Mark: Program status LEDs
+19. [x] Nawras: Install software on pi (completed 3/17)
+20. [x] Mark: Program status LEDs (completed 3/16)
+
+# Thursday, 3/17/2022
+
+- Group met in boffin
+- Adam and Ahmed absent
+- First chassis part printed, doesn't fit the roller ball
+- Wheels ordered don'tfit on the servo
+## Actions
+
+21. [x] Cry: Compile opencv on raspberry pi (completed 3/22)
+22. [x] Adam: fix chassis so the ball fits (completed 3/17)
+23. [x] Owen: Design and print new wheels (completed 3/20)
+
+# Thursday, 3/24/2022
+
+- Owen stopped by boffin on the previous day to do a basic mobility test with the new wheels
+- Adam out with a concussion
+- Owen and Cry got flask page up and running on the pi w/ line detection
+
+## Actions
+
+No new tasks for this week, just continued with assembly and testing
+
+# Thursday 3/31/2022
+
+- Robot running completely untethered w/ pi and motor driver
+
+## Actions
+
+24. [x] Any member: find hot melt glue gun (completed 4/12)
 
 # Thursday, 4/7/2022
 
@@ -132,28 +162,50 @@ No new actions assigned
 
 ## Actions
 
-21. [ ] Owen: Calibrate valves
-22. [x] Owen: Make camera standoff (completed 4/14)
-23. [ ] Nawras: Improve webpage CSS
+25. [x] Owen: Calibrate valves (completed 4/19)
+26. [x] Owen: Make camera standoff (completed 4/14)
+27. [ ] Nawras: Improve webpage CSS
 
 
 # Tuesday, 4/12/2022
 
 - Brief meeting online via text messaging to assign tasks
 
-
 ## Actions
 
-24. [ ] Owen: design and fabricate pump motor driver board
-25. [ ] Mark: write code for weight sensor
+28. [x] Owen: design and fabricate pump motor driver board (completed 4/19)
+29. [x] Mark: write code for weight sensor (completed 4/21)
 
 # Thursday, 4/14/2022
 
 - Owen present at 8:10 am, all other group members >30min late or absent
 - Mixing chamber design finalized, in print queue
-- Owen performed some of the tests
+- Owen performed some of the tests, line following is functional
 
 ## Actions
 
-26. [x] Owen: perform 0.0-0.2, 3.1-3.2, 4.0-4.1 (completed 4/14)
-27. [ ] Adam: Drill new mounting holes for weight sensor
+30. [x] Owen: perform 0.0-0.2, 3.1-3.2, 4.0-4.1 (completed 4/14)
+31. [x] Adam: Drill new mounting holes for weight sensor (completed 4/14)
+32. [ ] Adam: Ahmed, Cry: Start work on presentation
+33. [ ] Owen: Redesign camera standoff to have LED ring (completed 4/18)
+
+# Tuesday, 4/19/2022
+
+- Owen and Cry present
+- Met in LPKF fabrication lab to make motor driver board
+
+## Actions
+
+No new actions, work continued on outstanding tasks
+
+# Thursday, 4/21/2022
+
+- Cry out with fever, scheduled remote meeting with Adam and Nawras to work on presentation. Adam was absent
+- Adam started work on presentation
+- More assembly, fine tuning of line following
+
+## Actions
+
+34. [ ] Owen: Final assembly and troubleshooting
+
+
