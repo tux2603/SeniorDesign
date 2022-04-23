@@ -187,7 +187,7 @@ No new tasks for this week, just continued with assembly and testing
 30. [x] Owen: perform 0.0-0.2, 3.1-3.2, 4.0-4.1 (completed 4/14)
 31. [x] Adam: Drill new mounting holes for weight sensor (completed 4/14)
 32. [ ] Adam: Ahmed, Cry: Start work on presentation
-33. [ ] Owen: Redesign camera standoff to have LED ring (completed 4/18)
+33. [x] Owen: Redesign camera standoff to have LED ring (completed 4/18)
 
 # Tuesday, 4/19/2022
 
